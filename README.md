@@ -19,3 +19,16 @@ INSTALL
 
 8. Alba_AutoOpen_RegionGrow.java is the editable code for the plugin should improvements or changes be required.
 
+USAGE
+
+1. You will be prompted to Open DV Images. The plugin was written for 4 channel deltavision images acquired Green channel, Red Channel, Far-Red Channel and Blue Channel. It will cause problems if the channel order is changed.
+
+2. When the Bio-Formats dialogue opens make sure that the only tick is in Split Channels, nothing else should be ticked.
+
+3. A dialogue box opens asking for a background oval to be drawn on the Green Channel, draw the region in an area of background, do not change channel. Click OK and you will be prompted to draw another region on the red channel.
+
+4. The plugin will automatically threshold the blue channel to select the nucleus, you will be given the option to adjust the threshold if required.
+
+5. If more than one region is found select the correct one from the open ROI manager.
+
+6. The measurments will be made automatically and saved to the text file you should have created in C:\Temp
